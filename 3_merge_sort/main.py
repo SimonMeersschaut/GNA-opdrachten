@@ -15,7 +15,6 @@ def mergeSort(arr,count = 0):
 
         i = j = k = 0
 
-        # Copy data to temp arrays L[] and R[]
         while i < len(L) and j < len(R):
             count += 1
             if L[i] < R[j]:
@@ -26,7 +25,6 @@ def mergeSort(arr,count = 0):
                 j += 1
             k += 1
 
-        # Checking if any element was left
         while i < len(L):
             arr[k] = L[i]
             i += 1
