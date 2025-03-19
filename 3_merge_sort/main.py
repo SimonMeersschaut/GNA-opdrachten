@@ -1,5 +1,6 @@
 import math
 import random
+import time
 
 
 def mergeSort(arr,count = 0):
@@ -37,8 +38,9 @@ def mergeSort(arr,count = 0):
     return count
 
 counts = []
-step_size = 5
-step_count = 100
+step_size = 500
+step_count = 200
+time_start = time.time()
 for n in range(0, step_count*step_size, step_size):
     array = [i for i in range(n)]
     random.shuffle(array)
@@ -49,11 +51,7 @@ for n in range(0, step_count*step_size, step_size):
     array = [i for i in range(n)]
     counts_BC.append(mergeSort(array))
 
-counts_equals = []
-for n in range(0, step_count*step_size, step_size):
-    array = [4 for i in range(n)]
-    counts_equals.append(mergeSort(array))
-
+print("Time taken: ", time.time()-time_start)
 
 import matplotlib.pyplot as plt
 # plot experimental data
