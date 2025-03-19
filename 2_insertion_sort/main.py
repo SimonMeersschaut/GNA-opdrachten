@@ -13,7 +13,7 @@ def insertionSort(arr, _):
     n = len(arr)  # Get the length of the array
      
     if n <= 1:
-        return 0  # If the array has 0 or 1 element, it is already sorted, so return
+        return  # If the array has 0 or 1 element, it is already sorted, so return
 
     for i in range(1, n):  # Iterate over the array starting from the second element
         key = arr[i]  # Store the current element as the key to be inserted in the right position
