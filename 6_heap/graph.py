@@ -3,7 +3,7 @@ from heap import Heap
 import random
 import math
 
-N = 1000 # 1.000
+N = 256000
 
 comparisons_list = []
 h = Heap()

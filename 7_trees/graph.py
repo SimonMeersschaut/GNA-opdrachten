@@ -9,7 +9,7 @@ total_heights =[]
 average_heights =[]
 max_heights =[]
 
-N = 1000
+N = 2000
 
 
 for i in range(1, N):
